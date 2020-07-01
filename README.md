@@ -25,5 +25,6 @@ we will be trying to find and fix those. We are trying to accomplish the followi
 - [x] Bugfixes
 - [x] Create new Implementation with generics
 - [x] Create GenericQueueTest
+- [x] Create GenericQueueTestInteger
 - [ ] Create maven site documentation
 
