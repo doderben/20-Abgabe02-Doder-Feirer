@@ -21,8 +21,9 @@ we will be trying to find and fix those. We are trying to accomplish the followi
 - [x] Create .gitignore
 - [x] Create pom.xml
 - [x] Create README.md
-- [ ] Find the 3 bugs in StringQueue.java
-- [ ] Bugfixes
-- [ ] Create new Implementation with generics
+- [x] Find the 3 bugs in StringQueue.java
+- [x] Bugfixes
+- [x] Create new Implementation with generics
+- [ ] Create GenericQueueTest
 - [ ] Create maven site documentation
 
