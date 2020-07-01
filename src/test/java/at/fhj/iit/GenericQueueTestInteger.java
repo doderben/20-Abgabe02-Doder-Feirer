@@ -1,6 +1,5 @@
 package at.fhj.iit;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,11 +9,12 @@ import java.util.NoSuchElementException;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Testing for the class GenericQueue with Strings
+ * Testing for the class GenericQueue with Integers
  */
-@DisplayName("Testing GenericQueue with Strings")
-class GenericQueueTest {
-    private GenericQueue<String> queue, emptyQueue;
+@DisplayName("Testing GenericQueue with Integer Queues")
+class GenericQueueTestInteger {
+
+    private GenericQueue<Integer> queue, emptyQueue;
 
     /**
      * inits two queues for EACH test
@@ -22,11 +22,11 @@ class GenericQueueTest {
     @BeforeEach
     void setup(){
         //Setup Phase
-        queue = new GenericQueue<String>(3);
-        queue.offer("String 0");
-        queue.offer("String 1");
-        queue.offer("String 2");
-        emptyQueue = new GenericQueue<String>(2);
+        queue = new GenericQueue<Integer>(3);
+        queue.offer(0);
+        queue.offer(1);
+        queue.offer(2);
+        emptyQueue = new GenericQueue<Integer>(2);
     }
 
     /**
@@ -45,8 +45,8 @@ class GenericQueueTest {
     @Test
     @DisplayName("Testing Function offer")
     public void testFunctionOffer(){
-        assertEquals(queue.offer("String 3"), false);
-        assertEquals(emptyQueue.offer("String 0"), true);
+        assertEquals(queue.offer(3), false);
+        assertEquals(emptyQueue.offer(0), true);
     }
 
     /**
@@ -55,7 +55,7 @@ class GenericQueueTest {
     @Test
     @DisplayName("Testing Function remove")
     public void testFunctionRemove(){
-        assertEquals(queue.remove(), "String 0");
+        assertEquals(queue.remove(), 0);
         assertThrows(NoSuchElementException.class, ()->{emptyQueue.remove();});
     }
 
@@ -65,9 +65,8 @@ class GenericQueueTest {
     @Test
     @DisplayName("Testing Function element")
     public void testFunctionElement(){
-        assertEquals(queue.element(), "String 0");
+        assertEquals(queue.element(), 0);
         assertThrows(NoSuchElementException.class, ()->{emptyQueue.element();});
     }
-
 
 }
