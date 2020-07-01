@@ -4,11 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+/**
+ * This class can be used as a queue. It can also be parameterized with. It implements the IQueue Interface
+ *
+ * @param <T>
+ */
 public class GenericQueue<T> implements IQueue<T> {
 
+    /**
+     * all the elements in the queue from front to back
+     */
     private List<T> elements = new ArrayList<T>();
+
+    /**
+     * the maximum size of the queue
+     */
     private int maxSize;
 
+    /**
+     * Creates a StringQueue object with a given maxSize
+     *
+     * @param maxSize the maximum size of the queue
+     */
     public GenericQueue(int maxSize) {
         this.maxSize = maxSize;
     }
@@ -63,6 +80,11 @@ public class GenericQueue<T> implements IQueue<T> {
         return element;
     }
 
+    /**
+     * getter for maxSize
+     *
+     * @return the maximum Size of the Queue
+     */
     public int getMaxSize() {
         return maxSize;
     }

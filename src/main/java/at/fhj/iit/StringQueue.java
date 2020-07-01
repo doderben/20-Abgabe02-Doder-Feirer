@@ -8,11 +8,28 @@ import java.util.NoSuchElementException;
 // there are different Bugs, wrong implementation, typos, ...
 // write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
 
+/**
+ * This class can be used as a queue for Strings. It implements the IQueue Interface
+ *
+ * @param <String>
+ */
 public class StringQueue<String> implements IQueue<String> {
 
+  /**
+   * all the String elements in the queue from front to back
+   */
   private List<String> elements = new ArrayList<String>();
+
+  /**
+   * the maximum size of the queue
+   */
   private int maxSize;
 
+  /**
+   * Creates a StringQueue object with a given maxSize
+   *
+   * @param maxSize the maximum size of the queue
+   */
   public StringQueue(int maxSize) {
     this.maxSize = maxSize;
   }
@@ -67,6 +84,11 @@ public class StringQueue<String> implements IQueue<String> {
     return element;
   }
 
+  /**
+   * getter for maxSize
+   *
+   * @return the maximum Size of the Queue
+   */
   public int getMaxSize() {
     return maxSize;
   }
