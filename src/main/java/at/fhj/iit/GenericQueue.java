@@ -63,10 +63,6 @@ public class GenericQueue<T> implements IQueue<T> {
         return element;
     }
 
-    public List<T> getElements() {
-        return elements;
-    }
-
     public int getMaxSize() {
         return maxSize;
     }
