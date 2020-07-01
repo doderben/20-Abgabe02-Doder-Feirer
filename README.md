@@ -24,6 +24,6 @@ we will be trying to find and fix those. We are trying to accomplish the followi
 - [x] Find the 3 bugs in StringQueue.java
 - [x] Bugfixes
 - [x] Create new Implementation with generics
-- [ ] Create GenericQueueTest
+- [x] Create GenericQueueTest
 - [ ] Create maven site documentation
 
