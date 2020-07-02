@@ -13,8 +13,12 @@
                 <item href="plugins.html" name="Plugins" />
                 <item href="summary.html" name="Summary" />
                 <item href="team.html" name="Team" />
-		<item href="queue.html" name="Queue" />
             </item>
+	    <item href="info.html" name ="Markdown Elements">
+		<item href="queue.html" name="Queue" />
+		<item href="generics.html" name="Generics" />
+		<item href="codec.html" name="Code Coverage" />
+	    </item>
         </menu>
     </body>
 
