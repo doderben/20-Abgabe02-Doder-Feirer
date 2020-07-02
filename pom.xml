@@ -10,6 +10,7 @@
 
 
   <name>Queue</name>
+  <description>This Project is our own Implementation of a Queue that works with several generic types</description>
   <url>https://github.com/doderben/20-Abgabe02-Doder-Feirer.git</url>
   <developers>
     <developer>
@@ -71,8 +72,6 @@
   <reporting>
     <plugins>
 
-      <!-- maven site for documentation -->
-      <!-- manual upgraded maven site plugin, because 3.3 had an error -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
@@ -82,28 +81,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.0.0</version>
-      </plugin>
-      <!-- java doc support for maven site -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.2.0</version>
-        <reportSets>
-          <!-- reports our javadocs in our src code and test code -->
-          <reportSet>
-            <reports>
-              <report>javadoc</report>
-              <report>test-javadoc</report>
-            </reports>
-          </reportSet>
-          <reportSet><!-- aggregate reportSet, to define in poms having modules -->
-            <id>aggregate</id>
-            <inherited>false</inherited><!-- don't run aggregate in child modules -->
-            <reports>
-              <report>aggregate</report>
-            </reports>
-          </reportSet>
-        </reportSets>
       </plugin>
     </plugins>
   </reporting>
@@ -124,7 +101,6 @@
         <version>2.22.1</version>
       </plugin>
 
-      <!-- Maven Site Plugin for generating documentation -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
