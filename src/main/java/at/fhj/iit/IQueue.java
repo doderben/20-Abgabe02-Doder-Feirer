@@ -1,5 +1,10 @@
 package at.fhj.iit;
 
+/**
+ * Interface for queues of different types
+ *
+ * @param <T>
+ */
 public interface IQueue<T> {
   /**
    * Adds the element obj to the queue.
